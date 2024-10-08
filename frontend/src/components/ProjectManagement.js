@@ -15,7 +15,6 @@ const ProjectManagement = () => {
 
   return (
     <div>
-      <h2>Manage Your Projects</h2>
       <Button variant="primary" onClick={handleShow}>
         Add New Project
       </Button>
