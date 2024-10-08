@@ -1,32 +1,33 @@
 import React from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
+import './Dashboard.css';  // Assuming you already have a CSS file for custom styles
 
 const Dashboard = () => {
   return (
-    <Container>
-      <h1 className="mb-4">Internal Developer Platform Dashboard</h1>
+    <Container fluid className="dashboard-container">
+      <h1 className="mb-4 dashboard-title">Developer Platform Dashboard</h1>
       
       <Row>
         <Col md={6}>
-          <Card className="mb-4">
+          <Card className="dashboard-card">
             <Card.Body>
-              <Card.Title>CI/CD Pipelines</Card.Title>
-              <Card.Text>
+              <Card.Title className="dashboard-card-title">CI/CD Pipelines</Card.Title>
+              <Card.Text className="dashboard-card-text">
                 Monitor the status of ongoing and completed pipelines.
               </Card.Text>
-              <Button variant="primary">View Pipelines</Button>
+              <Button className="dashboard-button">View Pipelines</Button>
             </Card.Body>
           </Card>
         </Col>
 
         <Col md={6}>
-          <Card className="mb-4">
+          <Card className="dashboard-card">
             <Card.Body>
-              <Card.Title>Manage Projects</Card.Title>
-              <Card.Text>
+              <Card.Title className="dashboard-card-title">Manage Projects</Card.Title>
+              <Card.Text className="dashboard-card-text">
                 Add, update, or delete your projects.
               </Card.Text>
-              <Button variant="secondary">Manage Projects</Button>
+              <Button className="dashboard-button">Manage Projects</Button>
             </Card.Body>
           </Card>
         </Col>
@@ -34,14 +35,14 @@ const Dashboard = () => {
 
       <Row>
         <Col md={6}>
-          <Card className="mb-4">
+          <Card className="dashboard-card">
             <Card.Body>
-              <Card.Title>Actions</Card.Title>
-              <Card.Text>
+              <Card.Title className="dashboard-card-title">Actions</Card.Title>
+              <Card.Text className="dashboard-card-text">
                 Trigger builds, deploy services, and more.
               </Card.Text>
-              <Button variant="success">Trigger Build</Button>
-              <Button variant="info" className="ml-2">View Logs</Button>
+              <Button className="dashboard-button">Trigger Build</Button>
+              <Button className="dashboard-button ml-2">View Logs</Button>
             </Card.Body>
           </Card>
         </Col>
